@@ -13,7 +13,7 @@
 
 **1. Κλωνοποίηση του αποθετηρίου:**
 ```bash
-git clone [https://github.com/Tolizz/thread-pool-assignment.git](https://github.com/Tolizz/thread-pool-assignment.git)
+git clone https://github.com/Tolizz/thread-pool-assignment.git
 cd thread-pool-assignment
 
 ```
