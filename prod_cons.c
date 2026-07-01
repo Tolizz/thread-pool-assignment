@@ -15,7 +15,9 @@
 #define QUEUESIZE 10
 #define PRODUCER_LOOPS 10000 // Number of tasks each producer will create
 #define NUM_PRODUCERS 2      // Parameter p
+#ifndef NUM_CONSUMERS
 #define NUM_CONSUMERS 4      // Parameter q
+#endif    
 
 // --- STRUCTURES ---
 
