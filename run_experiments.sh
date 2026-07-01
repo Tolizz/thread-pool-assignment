@@ -13,7 +13,7 @@ do
     gcc -O3 -Wall -DNUM_CONSUMERS=$q -o pc prod_cons.c -lpthread -lm
     
     # Τρέχουμε το πρόγραμμα 5 φορές
-    for i in {1..5}
+    for i in {1..20}
     do
         echo -n "Εκτέλεση $i: "
         # Τρέχουμε το πρόγραμμα και απομονώνουμε (grep) μόνο τη γραμμή με τον χρόνο
