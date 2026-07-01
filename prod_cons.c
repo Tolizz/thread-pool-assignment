@@ -114,11 +114,11 @@ int main() {
 // --- WORK FUNCTION ---
 void *calculate_sine(void *arg) {
     WorkArgs *args = (WorkArgs *)arg;
-    double result[10];
+    volatile double dummy_sum = 0.0; // To prevent compiler optimization
     
     // Simple work: calculate sine for 10 angles
     for (int i = 0; i < 10; i++) {
-        result[i] = sin(args->angles[i]);
+        dummy_sum += sin(args->angles[i]);
     }
     
     // Free the memory allocated by the producer
